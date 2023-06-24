@@ -4,20 +4,20 @@ import './App.css';
 import axios from 'axios';
 
 function App() {
-  const [textAreaValue, setTextAreaValue] = useState('');
-  const [data, setData] = useState([]);
+  // const [textAreaValue, setTextAreaValue] = useState('');
+  // const [data, setData] = useState([]);
 
-  const handleSubmit = async () => {
-    try {
-      const response = await axios.post('/prompt', {
-        "prompt": textAreaValue
-      });
-
-      setData(response.data.message);
-    } catch (error) {
-      console.error('Error:', error);
-    }
-  };
+  // const handleSubmit = async () => {
+  //   try {
+  //     const response = await axios.post('/prompt', {
+  //       "prompt": textAreaValue
+  //     });
+  //
+  //     setData(response.data.message);
+  //   } catch (error) {
+  //     console.error('Error:', error);
+  //   }
+  // };
 
   return (
     <div className="App">
